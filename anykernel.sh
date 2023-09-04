@@ -4,14 +4,15 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=spes/spesn kernel Upstreamed v4.19.325-KernelSU-Next | @muralivijay9845(Telegram)
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
-supported.versions=
+device.name1=spes
+device.name2=spesn
+supported.versions=11.0-15.0
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
@@ -25,7 +26,7 @@ set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
 # boot shell variables
-BLOCK=;
+BLOCK=boot;
 IS_SLOT_DEVICE=auto;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
